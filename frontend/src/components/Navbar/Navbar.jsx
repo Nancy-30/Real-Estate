@@ -35,10 +35,10 @@ export default function Navbar() {
           </div>
         ) : (
           <>
-            <a href="/">Sign in</a>
-            <a href="/" className="register">
+            <Link to="/login">Sign in</Link>
+            <Link to="/register" className="register">
               Sign up
-            </a>
+            </Link>
           </>
         )}
 
@@ -47,12 +47,12 @@ export default function Navbar() {
             onClick={() => setOpen((prev) => !prev)} />
         </div>
         <div className={open ? "menu active" : "menu"}>
-          <Link to='/'>Home</Link>
-          <Link to='/'>About</Link>
-          <Link to='/'>Contact</Link>
-          <Link to='/'>Agents</Link>
-          <Link to='/'>Sign In</Link>
-          <Link to='/'>Sign Up</Link>
+          <Link to='/home'>Home</Link>
+          <Link to='/home'>About</Link>
+          <Link to='/home'>Contact</Link>
+          <Link to='/home'>Agents</Link>
+          <Link to='/login'>Sign In</Link>
+          <Link to='/register'>Sign Up</Link>
         </div>
       </div>
     </nav>

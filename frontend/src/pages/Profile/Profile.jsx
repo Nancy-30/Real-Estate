@@ -2,6 +2,7 @@ import React from 'react'
 import "./Profile.scss";
 import List from '../../components/List/List';
 import Chat from '../../components/chat/Chat';
+import { Link } from 'react-router-dom';
 
 export default function Profile() {
     return (
@@ -27,8 +28,11 @@ export default function Profile() {
 
                     <div className="title">
                         <h1>My List</h1>
-                        <button>Create new Post</button>
+                        <button>
+                            <Link to="/newpost">Create new Post</Link>
+                        </button>
                     </div>
+                    
                     <List />
                     <div className="title">
                         <h1>Saved List</h1>
