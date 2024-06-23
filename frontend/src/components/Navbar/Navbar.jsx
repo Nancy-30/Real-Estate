@@ -47,10 +47,10 @@ export default function Navbar() {
             onClick={() => setOpen((prev) => !prev)} />
         </div>
         <div className={open ? "menu active" : "menu"}>
-          <Link to='/home'>Home</Link>
-          <Link to='/home'>About</Link>
-          <Link to='/home'>Contact</Link>
-          <Link to='/home'>Agents</Link>
+          <Link to='/'>Home</Link>
+          <Link to='/'>List</Link>
+          <Link to='/'>Contact</Link>
+          <Link to='/'>Agents</Link>
           <Link to='/login'>Sign In</Link>
           <Link to='/register'>Sign Up</Link>
         </div>

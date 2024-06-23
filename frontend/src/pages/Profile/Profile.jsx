@@ -12,7 +12,9 @@ export default function Profile() {
                 <div className="wrapper">
                     <div className="title">
                         <h1>User Info</h1>
-                        <button>Update Profile</button>
+                        <button>
+                            <Link to="/updatepost">Update Profile</Link>
+                        </button>
                     </div>
                     <div className="info">
                         <span>
@@ -32,7 +34,7 @@ export default function Profile() {
                             <Link to="/newpost">Create new Post</Link>
                         </button>
                     </div>
-                    
+
                     <List />
                     <div className="title">
                         <h1>Saved List</h1>
