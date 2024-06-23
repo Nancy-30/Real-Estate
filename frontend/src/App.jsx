@@ -5,6 +5,7 @@ import "./pages/layout/Layout.scss"
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Single from "./pages/singlePage/Single";
+import Profile from "./pages/Profile/Profile";
 function App() {
   const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ function App() {
         {
           path: "/:id",
           element: <Single />
+        },
+        {
+          path: "/profile",
+          element: <Profile />
         },
       ]
     },
